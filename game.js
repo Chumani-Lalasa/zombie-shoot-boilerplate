@@ -72,14 +72,14 @@ function countDown(){
     if(checkIfZombiePasses(zombie)==true){
         // makeZombie();
         if(lives==0){
-            clearInterval(timer);
+            clearInterval();
             location.href="./game-over.html";
         }
     }
 
 
     if(seconds==0){
-        clearInterval(timer);
+        clearInterval();
         window.location.href="./win.html";
     }
 }
